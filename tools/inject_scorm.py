@@ -41,8 +41,10 @@ def main() -> int:
         print(f"Source HTML not found: {source}", file=sys.stderr)
         return 1
 
-    html = source.read_text(encoding="utf-8")
-    OUTPUT.write_text(inject_scorm(html), encoding="utf-8")
+    with open(source, "r", encoding="utf-8") as f:
+        html = f.read()
+    with open(OUTPUT, "w", encoding="utf-8", newline="\n") as f:
+        f.write(inject_scorm(html))
     print(f"Wrote {OUTPUT}")
     return 0
 

@@ -20,6 +20,17 @@ INCLUDE = [
 ]
 
 
+TEXT_EXTENSIONS = {".html", ".js", ".xml"}
+
+
+def add_to_zip(zf: zipfile.ZipFile, path: Path, arcname: str) -> None:
+    if path.suffix.lower() in TEXT_EXTENSIONS:
+        with open(path, "r", encoding="utf-8") as f:
+            zf.writestr(arcname, f.read())
+    else:
+        zf.write(path, arcname)
+
+
 def ensure_index() -> None:
     index = ROOT / "index.html"
     if index.is_file():
@@ -48,7 +59,7 @@ def build_zip() -> Path:
             path = ROOT / rel
             if not path.is_file():
                 raise SystemExit(f"Missing required file: {rel}")
-            zf.write(path, rel.replace("\\", "/"))
+            add_to_zip(zf, path, rel.replace("\\", "/"))
 
     return out
 
