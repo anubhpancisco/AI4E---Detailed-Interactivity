@@ -8,7 +8,7 @@
 (function () {
     "use strict";
 
-    var STATE_KEY = "trustLedger_v5";
+    var STATE_KEY = "trustLedger_v6";
     var TOTAL_STAGES = 16;
     var sessionStartMs = Date.now();
     var scormActive = false;
