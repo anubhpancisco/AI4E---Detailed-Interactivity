@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest
+    identifier="com.ai4e.leadership-social-influence.skill-application"
+    version="1.0.0"
+    xmlns="http://www.imsglobal.org/xsd/imscp_v1p1"
+    xmlns:adlcp="http://www.adlnet.org/xsd/adlcp_v1p3"
+    xmlns:adlseq="http://www.adlnet.org/xsd/adlseq_v1p3"
+    xmlns:imsss="http://www.imsglobal.org/xsd/imsss"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.imsglobal.org/xsd/imscp_v1p1 imscp_v1p1.xsd
+        http://www.adlnet.org/xsd/adlcp_v1p3 adlcp_v1p3.xsd
+        http://www.adlnet.org/xsd/adlseq_v1p3 adlseq_v1p3.xsd
+        http://www.imsglobal.org/xsd/imsss imsss_v1p0.xsd
+    "
+>
+    <metadata>
+        <schema>ADL SCORM</schema>
+        <schemaversion>2004 3rd Edition</schemaversion>
+        <adlcp:location>metadata.xml</adlcp:location>
+    </metadata>
+
+    <organizations default="org-leadership-skill-app">
+        <organization identifier="org-leadership-skill-app">
+            <title>Leadership &amp; Social Influence · Skill Application</title>
+            <item identifier="item-leadership-skill-app" identifierref="res-leadership-skill-app">
+                <title>Leadership &amp; Social Influence · Skill Application</title>
+                <adlcp:masteryscore>0</adlcp:masteryscore>
+                <imsss:sequencing>
+                    <imsss:deliveryControls tracked="true" completionSetByContent="true" objectiveSetByContent="true" />
+                </imsss:sequencing>
+            </item>
+        </organization>
+    </organizations>
+
+    <resources>
+        <resource
+            identifier="res-leadership-skill-app"
+            type="webcontent"
+            adlcp:scormType="sco"
+            href="index.html"
+        >
+            <file href="index.html" />
+            <file href="metadata.xml" />
+            <file href="scripts/scorm-api-wrapper.js" />
+            <file href="scripts/scorm-bridge.js" />
+        </resource>
+    </resources>
+</manifest>

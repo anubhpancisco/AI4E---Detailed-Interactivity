@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lom xmlns="http://ltsc.ieee.org/xsd/LOM">
+    <general>
+        <identifier>
+            <catalog>URI</catalog>
+            <entry>com.ai4e.leadership-social-influence.skill-application</entry>
+        </identifier>
+        <title>
+            <string language="en">Leadership &amp; Social Influence · Skill Application</string>
+        </title>
+        <language>en</language>
+        <description>
+            <string language="en">Interactive scenario-based skill application activity on leadership, coaching, and AI adoption. SCORM 2004 3rd Edition package.</string>
+        </description>
+        <keyword>
+            <string language="en">leadership</string>
+        </keyword>
+        <keyword>
+            <string language="en">coaching</string>
+        </keyword>
+        <keyword>
+            <string language="en">AI adoption</string>
+        </keyword>
+    </general>
+    <lifeCycle>
+        <version>
+            <string>1.0.0</string>
+        </version>
+        <status>
+            <source>LOMv1.0</source>
+            <value>final</value>
+        </status>
+    </lifeCycle>
+    <technical>
+        <format>text/html</format>
+        <location>index.html</location>
+    </technical>
+    <educational>
+        <learningResourceType>
+            <source>LOMv1.0</source>
+            <value>interactive</value>
+        </learningResourceType>
+        <intendedEndUserRole>
+            <source>LOMv1.0</source>
+            <value>learner</value>
+        </intendedEndUserRole>
+    </educational>
+</lom>
