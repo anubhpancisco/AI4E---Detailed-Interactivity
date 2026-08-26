@@ -26,7 +26,7 @@ SCORM **2004 3rd Edition** package for the interactive leadership skill applicat
 - `cmi.success_status` — `unknown` → `passed`
 - `cmi.progress_measure` — 0–1 based on stage (16 sections)
 - `cmi.location` — current stage index
-- `cmi.suspend_data` — full activity state JSON (`trustLedger_v5`)
+- `cmi.suspend_data` — full activity state JSON (`trustLedger_v6`)
 - `cmi.session_time` — ISO 8601 duration per session
 - `cmi.exit` — `suspend` on page unload
 
